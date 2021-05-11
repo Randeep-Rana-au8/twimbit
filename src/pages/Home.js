@@ -21,7 +21,7 @@ const Home = ({ history }) => {
           Authorization: `Bearer ${state.token}`,
         },
       };
-      const { data } = await axios.get("http://twimbit-backend.herokuapp.com/api/posts", config);
+      const { data } = await axios.get("https://twimbit-backend.herokuapp.com/api/posts", config);
       setAllPosts(data);
     }
   }, [userInfo]);
